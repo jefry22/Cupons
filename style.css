@@ -1,0 +1,135 @@
+
+    :root {
+      --font-size-sm: 14px;
+      --font-size-md: 18px;
+      --font-size-lg: 24px;
+      --color-text-primary: #0f0f0fed;
+      --color-text-secundary: #888585fe;
+      --color-text-input: #f4f3f3fe;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Quicksand", sans-serif;
+    }
+    p {
+      margin: 0;
+    }
+    h1,
+    h2,
+    h3 {
+      margin: 0;
+    }
+    .container{
+        margin: 0;
+    }
+    .container-card-product {
+      width: 100%;
+      display: grid;
+      margin: 10px 0px;
+      grid-template-columns: repeat(4, 280px);
+      gap: 20px;
+      justify-content: center;
+    }
+    .card-product {
+      width: 100%;
+    }
+    .card-product img {
+      width: 100%;
+      cursor: pointer;
+      box-shadow: 0px 2px 2px 1px #00000047;
+    }
+
+    /* CARD INFO PRODUCT */
+
+    .card-info-product {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    .img-product img {
+      width: 480px;
+    }
+    .info-product {
+      width: 360px;
+      padding: 8px;
+      display: flex;
+      flex-direction: column;
+      margin-left: 20px;
+      /* background-color: red;   */
+    }
+    .title-product {
+      font-size: var(--font-size-lg);
+      color: var(--color-text-primary);
+      font-weight: bold;
+      margin-top: 24px ;
+    }
+    .price-product {
+      margin-bottom: 24px;
+      color: var(--color-text-secundary);
+      font-size: var(--font-size-md);
+      font-weight: 500;
+    }
+    .info {
+      line-height: 1.6;
+      margin-bottom: 12px;
+    }
+    .cuopons {
+      margin: 20px 0px;
+      padding: 12px;
+      width: 80%;
+      border: none;
+      background-color: var(--color-text-input);
+      border-radius: 8px;
+    }
+    .btnCupons{
+      width: 85%;
+      border: none;
+      padding: 8px;
+      background-color: rgb(245, 245, 44);
+      color: black;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+@media (max-width:640px) {
+    .container{
+        padding: 8px;
+    }
+    .container-card-product{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin: 0;
+        gap: 0;
+        border: none;
+    }
+    .img-product img {
+        width: 200px;
+      }
+      .card-info-product {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .info-product{
+        margin: 0;
+      }
+      .title-product{
+        font-size: var(--font-size-md);
+        text-align: center;
+      }
+      .price-product{
+        font-size: var(--font-size-sm);
+        text-align: center;
+      }
+      .cuopons{
+        padding: 8px 0px;
+        width: 100%;
+        text-align: center;
+      }
+      .btnCupons{
+        width: 100%;
+      }
+}
